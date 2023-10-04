@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="account" type="account"/>
+
+  <xs:complexType name="account">
+    <xs:sequence>
+      <xs:element name="accountNumber" type="xs:string" minOccurs="0"/>
+      <xs:element name="openingDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="fullName" type="xs:string" minOccurs="0"/>
+      <xs:element name="currentBalance" type="xs:decimal" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
